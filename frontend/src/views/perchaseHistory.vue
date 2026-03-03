@@ -31,7 +31,7 @@ import axios from "axios";
 const purchases = ref([]);
 
 onMounted(async () => {
-  const res = await axios.get("http://localhost:5000/api/purchases");
+  const res = await axios.get("/api/purchases");
   purchases.value = res.data;
 });
 
